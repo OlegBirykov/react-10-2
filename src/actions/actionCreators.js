@@ -1,4 +1,13 @@
-import { ADD_SERVICE, EDIT_SERVICE, REMOVE_SERVICE, CHANGE_SERVICE_FIELD, CLEAR_SERVICE_FIELDS, SET_ERROR } from './actionTypes';
+import { 
+  ADD_SERVICE, 
+  EDIT_SERVICE, 
+  REMOVE_SERVICE, 
+  CHANGE_SERVICE_FIELD, 
+  CLEAR_SERVICE_FIELDS, 
+  SET_ERROR,
+  FILTER_SERVICES,
+  CHANGE_FILTER
+} from './actionTypes';
 
 export function addService(id, name, price) {
   return { type: ADD_SERVICE, payload: { id, name, price } };
@@ -23,3 +32,12 @@ export function clearServiceFields() {
 export function setError(error) {
   return { type: SET_ERROR, payload: { error } };
 }
+
+export function filterServices(filter) {
+  return { type: FILTER_SERVICES, payload: { filter } };
+}
+
+export function changeFilter(filter) {
+  return { type: CHANGE_FILTER, payload: { filter } };
+}
+

@@ -1,18 +1,15 @@
 import React from 'react';
 import './App.css';
 import ServiceAdd from './components/ServiceAdd';
+import ServiceFilter from './components/ServiceFilter';
 import ServiceList from './components/ServiceList';
-import ServiceAddClassBased from './components/ServiceAddClassBased';
-import ServiceListClassBased from './components/ServiceListClassBased';
 
 function App() {
   return (
     <>
       <ServiceAdd />
+      <ServiceFilter />
       <ServiceList />
-      <hr />
-      <ServiceAddClassBased />
-      <ServiceListClassBased />
     </>
   );
 }

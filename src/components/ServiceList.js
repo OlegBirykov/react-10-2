@@ -26,7 +26,7 @@ function ServiceList() {
 
   return (
     <ul>
-      {items.map(({ id, name, price }) => (
+      {items.filter(({ isVisible }) => isVisible).map(({ id, name, price }) => (
         <li key={id}>
           {name} {price}
           <button onClick={() => handleEdit(id, name, price)}>&#x270E;</button>  

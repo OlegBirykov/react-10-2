@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { changeServiceField, addService, clearServiceFields, setError } from '../actions/actionCreators';
+import { changeServiceField, addService, clearServiceFields, changeFilter, setError } from '../actions/actionCreators';
 
 function ServiceAdd() {
 	const {id, name, price, error, isEdit} = useSelector(state => state.serviceAdd);
@@ -16,6 +16,7 @@ function ServiceAdd() {
 		if (name && price && !isNaN(Number(price))) {
 			dispatch(addService(id, name, price));
 			dispatch(clearServiceFields());
+			dispatch(changeFilter(''));
 		} else {
 			dispatch(setError('Введите корректные данные'));
 		}
