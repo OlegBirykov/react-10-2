@@ -1,3 +1,11 @@
+# Build Status
+
+[![Build status](https://ci.appveyor.com/api/projects/status/lgwc4ledumgs76qe?svg=true)](https://ci.appveyor.com/project/OlegBirykov/react-10-2)
+
+# GitHub Pages
+
+https://olegbirykov.github.io/react-10-2/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
